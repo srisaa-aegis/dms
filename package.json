@@ -1,0 +1,71 @@
+{
+  "name": "stl-dms",
+  "version": "0.1.0",
+  "description": "A document manager for Angular with pluggable sources: a local folder (File System Access / manifest) or Google Drive. Pure core, child widgets and the document-manager component.",
+  "license": "MIT",
+  "keywords": [
+    "dms",
+    "document-manager",
+    "google-drive",
+    "file-manager",
+    "angular",
+    "primeng"
+  ],
+  "author": "Srisaa Technologies Private Limited",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srisaa-aegis/dms.git"
+  },
+  "module": "./dist/fesm2022/stl-dms.mjs",
+  "typings": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json -c tsconfig.lib.json",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json && ngc --noEmit -p tsconfig.demo.json",
+    "test": "jest",
+    "demo": "node scripts/build-demo.js",
+    "samples": "node scripts/gen-samples.js"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=19",
+    "@angular/core": ">=19",
+    "@angular/forms": ">=19",
+    "primeng": ">=19"
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.0.0",
+    "@angular/animations": "^19.0.0",
+    "@angular/cli": "^19.0.0",
+    "@angular/common": "^19.0.0",
+    "@angular/compiler": "^19.0.0",
+    "@angular/compiler-cli": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/forms": "^19.0.0",
+    "@angular/platform-browser": "^19.0.0",
+    "@primeng/themes": "^19.1.4",
+    "@types/jest": "^29.5.12",
+    "autoprefixer": "^10.4.0",
+    "esbuild": "^0.25.0",
+    "jest": "^29.7.0",
+    "ng-packagr": "^19.0.0",
+    "postcss": "^8.4.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^19.1.4",
+    "rxjs": "~7.8.0",
+    "tailwindcss": "^3.4.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "~5.6.0",
+    "zone.js": "~0.15.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "module": "commonjs", "moduleResolution": "node", "esModuleInterop": true, "importHelpers": false, "types": ["jest"] },
+  "include": ["test/**/*.ts", "src/core/**/*.ts", "src/sources/**/*.ts"]
+}
