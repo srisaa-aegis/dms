@@ -1,0 +1,2 @@
+demo/sample-files/** -text
+*.pdf -text
